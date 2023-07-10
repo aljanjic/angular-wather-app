@@ -10,12 +10,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes =[
   {path:'', component: WeatherReportComponent},
-  {path:'/:locationName', component: WeatherReportComponent}
+  {path:':locationName', component: WeatherReportComponent}
 ]
 @NgModule({
   declarations: [
@@ -26,11 +26,12 @@ const routes: Routes =[
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
