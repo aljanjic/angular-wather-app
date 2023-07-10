@@ -11,6 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http' 
 
 
 const routes: Routes =[
@@ -27,6 +28,7 @@ const routes: Routes =[
     ReactiveFormsModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
