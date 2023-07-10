@@ -2,8 +2,8 @@
 <div class="content">
   <mat-form-field>
     <mat-label>Select city</mat-label>
-    <mat-select FormControl = "cityControl">
-      <mat-option *ngFor="let city of cities">
+    <mat-select [formControl] = "cityControl">
+      <mat-option *ngFor="let city of cities" [value]="city">
         {{city}}
       </mat-option>
     </mat-select>

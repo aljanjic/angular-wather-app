@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -17,17 +17,19 @@ export class AppComponent implements OnInit, OnDestroy {
   cities = ['London', 'Paris', 'Moscow', 'New York', 'Karachi', 'Sydney']
 
 
-  constructor(private router: Router){
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router){
     this.cityControl = new FormControl('');
+
+  }
+
+  ngOnInit(): void {
     this.cityControl.valueChanges.subscribe(
       (value) => {
         this.router.navigate([value])
       }
     )
-  }
-
-  ngOnInit(): void {
-
 
   }
 
