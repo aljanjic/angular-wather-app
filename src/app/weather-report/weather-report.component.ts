@@ -15,6 +15,8 @@ export class WeatherReportComponent implements OnInit {
   // data$: Observable<any> | undefined;
 
   data$: Observable<any>| undefined;
+
+  today = new Date();
   
   constructor(private weatherAppService: WeatherAppService ,private route: ActivatedRoute){
 
