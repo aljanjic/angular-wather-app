@@ -14,7 +14,7 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'angular-weather-app';
   cityControl: FormControl;
 
-  cities = ['London', 'Paris', 'Moscow', 'New York', 'Karachi', 'Sydney', 'Bratislava', 'Banja Luka']
+  cities = ['London', 'Paris', 'Moscow', 'New York', 'Karachi', 'Sydney', 'Bratislava', 'Nitra', 'Banja Luka', 'Doboj']
 
 
   constructor(
