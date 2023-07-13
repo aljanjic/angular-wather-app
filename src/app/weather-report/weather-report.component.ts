@@ -56,8 +56,6 @@ export class WeatherReportComponent implements OnInit {
       filter((name) => !!name),
       concatMap((name) => this.weatherAppService.getWeatherForCity(name))
     );
-      setTimeout(() => {
-        console.log('data: ', this.data$)
-      }, 2000)
   }
+  
 }
