@@ -10,7 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
-import {MatCardModule} from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card'
+import { MatProgressBarModule } from '@angular/material/progress-bar'
+
 
 import { AppComponent } from './app.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
@@ -37,6 +39,7 @@ const routes: Routes =[
     MatFormFieldModule,
     MatSelectModule,
     MatCardModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
