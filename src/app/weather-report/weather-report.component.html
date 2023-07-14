@@ -14,9 +14,9 @@
     <mat-card-content>
         <div class="flex-row">
             <div class="temp">
-                <span class="big-text">{{ data.main.temp | number: '0.0-0' }} C</span>
+                <span class="big-text">{{ data.main.temp | number: '0.0-0' }}°C</span>
                 <span> Feels like </span>
-                <span> {{ data.main.feels_like | number: '0.0-0'}} </span>
+                <span> {{ data.main.feels_like | number: '0.0-0'}}°C</span>
             </div>
             <div class="outlook">
                 <img [src]="data.image" class="image" />
