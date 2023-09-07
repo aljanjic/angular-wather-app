@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
   countries = [
     {
       name: 'Bosnia and Hercegovina',
-      cities: ['Banja Luka', 'Doboj', 'Sarajevo', 'Mostar', 'Tuzla']
+      cities: ['Banja Luka', 'Doboj', 'Sarajevo', 'Mostar', 'Tuzla', 'Trebinje']
     },
 
     {
