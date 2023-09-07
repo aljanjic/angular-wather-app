@@ -31,6 +31,12 @@ export class AppComponent implements OnInit, OnDestroy {
       cities: ['Bratislava', 'Nitra', 'Kosice', 'Banská Bystrica']
     },
 
+    {
+      name: 'Germany',
+      cities: ['Munich', 'Regensburg', 'Berlin']
+    },
+
+
   ];
 
   constructor(
