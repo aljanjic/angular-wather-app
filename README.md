@@ -1,5 +1,7 @@
 # AngularWeatherApp
 
+Weather app can be found on the following link: https://weather-app-79be4.web.app/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
 ## Development server
